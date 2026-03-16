@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>阿爪测试站点 v2</title>
+    <title>阿爪测试站点 - 自动部署测试</title>
     <style>
         body { font-family: system-ui; max-width: 600px; margin: 50px auto; padding: 20px; }
-        h1 { color: #e74c3c; }
-        .info { background: #f0f0f0; padding: 15px; border-radius: 8px; }
-        .new { color: #27ae60; font-weight: bold; }
+        h1 { color: #27ae60; }
+        .info { background: #e8f5e9; padding: 15px; border-radius: 8px; border-left: 4px solid #27ae60; }
+        .success { color: #27ae60; font-weight: bold; font-size: 1.2em; }
     </style>
 </head>
 <body>
-    <h1>🦞 阿爪测试站点 v2</h1>
+    <h1>🦞 阿爪测试站点</h1>
     <div class="info">
-        <p class="new">✨ 自动部署测试成功!</p>
+        <p class="success">✅ 自动部署测试成功！</p>
         <p><strong>部署时间:</strong> <span id="time"></span></p>
-        <p><strong>来源:</strong> GitHub → Cloudflare Pages (自动)</p>
+        <p><strong>流程:</strong> GitHub Push → Cloudflare Pages 自动构建</p>
         <p><strong>作者:</strong> 张蓉的小爪子</p>
     </div>
     <script>document.getElementById('time').textContent = new Date().toLocaleString('zh-CN');</script>
